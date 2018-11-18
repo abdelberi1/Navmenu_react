@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react'
-import SubMenu from "./Submenu";
+
 
 
 class EpicMenu extends Component {
@@ -11,7 +11,10 @@ class EpicMenu extends Component {
 
             showForm: false
         }
+
     }
+
+    
 
     showForm() {
         this.setState({
@@ -29,6 +32,9 @@ class EpicMenu extends Component {
                {props.submenu}
            </a>)
        }
+
+
+      
 
 
         let searchForm = this.state.showForm ? (
@@ -87,7 +93,7 @@ class EpicMenu extends Component {
                         {linksMarkup}
 
                     </ul>
-
+                   
                     <button onClick={this.showForm.bind(this)} className="menu__search-button"></button>
 
                     {searchForm}
