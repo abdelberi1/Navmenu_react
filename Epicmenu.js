@@ -53,7 +53,7 @@ class EpicMenu extends Component {
 
                 <a className="menu__link" href={link.link}>{link.label}</a>
                 <div className="submenu">
-                {link.submenu && <SubMenu submenu={link.submenu}/>}
+                
 
                 </div>
                 </Fragment>
